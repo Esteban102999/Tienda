@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Papelería Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Papelería Online</h1>
+
+  <div class="productos">
+    <div class="producto">
+        <img src="cuaderno.jpg">
+      <h3>Cuaderno</h3>
+      <p>$5000</p>
+      <button onclick="agregarAlCarrito('Cuaderno', 5000)">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+        <img src="lapiz.jpg">
+        <h3>Lápiz</h3>
+      <p>$1000</p>
+      <button onclick="agregarAlCarrito('Lápiz', 1000)">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+        <img src="boligrago.jpg"  width="100" height="150" >
+      <h3>Bolígrafo</h3>
+      <p>$2000</p>
+      <button onclick="agregarAlCarrito('Bolígrafo', 2000)">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+        <img src="resaltador.jpg">
+      <h3>Resaltador</h3>
+      <p>$3500</p>
+      <button onclick="agregarAlCarrito('Resaltador', 3500)">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <div class="carrito">
+    <h2>
+        <h2>Carrito de Compras</h2>
+        <div id="listaCarrito"></div>
+        <div class="total">Total: $<span id="totalPagar">0</span></div>
+        <button class="boton-comprar" onclick="finalizarCompra()">Finalizar compra</button>
+      </div>
+    
+      <script src="script.js"></script>
+    </body>
+    </html>
